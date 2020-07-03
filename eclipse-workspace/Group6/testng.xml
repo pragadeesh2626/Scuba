@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="classes" thread-count="2">
+  <test  name="Test">
+  <parameter name = "number1" value = "5"/>
+ 
+    <classes>
+      <class name="Scuba_testng.Calc_2"/>
+      <class name="Scuba_testng.Calculator">
+      <methods>
+      <exclude  name = "divInt"/>
+       <include  name = "sub"/>
+        <include  name = "mul"/>
+         
+          <include  name = "add"/>
+          </methods></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

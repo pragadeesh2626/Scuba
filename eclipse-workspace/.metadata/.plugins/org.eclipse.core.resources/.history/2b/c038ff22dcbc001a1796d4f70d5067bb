@@ -1,0 +1,40 @@
+package Scuba_testng;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+import org.testng.annotations.DataProvider;
+
+
+
+public class Calculator { 
+	 @Test (dataProvider = "inputs")
+	 public static void add(int number1, int number2) {
+	      int a = number1 + number2;
+	      Reporter.log("The addition is"+a);
+	   }
+	 @Test (dataProvider = "inputs",groups = "test")
+	   public static void sub(int number1, int number2) {
+	      int c = number1 - number2;
+	      Reporter.log("The difference is"+c,true);
+	   }
+	 @Test (dataProvider = "inputs")
+	 public static void mul(int number1, int number2) {
+	      int d = number1 * number2;
+	      Reporter.log("The multiplication value is"+d,true);
+	   }
+	 
+	 @Test (dataProvider = "inputs")
+	   public static int divInt(int number1, int number2) {
+	      if (number2 == 0) {
+	         throw new IllegalArgumentException("Cannot divide by 0!");
+	      }
+	      return number1 / number2;
+	   }
+	 @DataProvider(name="inputs")
+		public Object[][] getData() {
+			return new Object[][] {
+				{1, 25},
+				{2, 100},
+				{3, 50}
+			};
+		}
+}

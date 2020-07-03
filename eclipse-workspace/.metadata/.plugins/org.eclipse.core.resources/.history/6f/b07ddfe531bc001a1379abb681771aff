@@ -1,0 +1,26 @@
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+import org.testng.annotations.DataProvider;
+
+
+
+public class Calculator { 
+	@Test
+	 public static int add(int number1, int number2) {
+	      return number1 + number2;
+	   }
+	 @Test
+	   public static void sub(int number1, int number2) {
+	      int c = number1 - number2;
+	      Reporter.log("The difference is"+c);
+	   }
+	 
+	 @DataProvider(name="inputs")
+		public Object[][] getData() {
+			return new Object[][] {
+				{1, 25},
+				{2, 100},
+				{3, 50}
+			};
+		}
+}

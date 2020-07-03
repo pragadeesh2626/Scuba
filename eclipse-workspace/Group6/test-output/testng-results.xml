@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="12" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[The exponential value is57.6650390625]]>
+    </line>
+    <line>
+      <![CDATA[The exponential value is498.11172172553194]]>
+    </line>
+    <line>
+      <![CDATA[The exponential value is9.75393440940717E28]]>
+    </line>
+    <line>
+      <![CDATA[The difference is-5]]>
+    </line>
+    <line>
+      <![CDATA[The difference is-88]]>
+    </line>
+    <line>
+      <![CDATA[The difference is-15]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="98" started-at="2020-07-03T09:28:11 IST" finished-at="2020-07-03T09:28:11 IST">
+    <groups>
+      <group name="test_2">
+        <method signature="Calc_2.exp(double, double)[pri:0, instance:Scuba_testng.Calc_2@43814d18]" name="exp" class="Scuba_testng.Calc_2"/>
+      </group> <!-- test_2 -->
+      <group name="test">
+        <method signature="Calculator.sub(int, int)[pri:0, instance:Scuba_testng.Calculator@5c5a1b69]" name="sub" class="Scuba_testng.Calculator"/>
+      </group> <!-- test -->
+    </groups>
+    <test name="Test" duration-ms="98" started-at="2020-07-03T09:28:11 IST" finished-at="2020-07-03T09:28:11 IST">
+      <class name="Scuba_testng.Calc_2">
+        <test-method status="PASS" signature="exp(double, double)[pri:0, instance:Scuba_testng.Calc_2@43814d18]" name="exp" duration-ms="9" started-at="2020-07-03T09:28:11 IST" data-provider="inputs_dbl" finished-at="2020-07-03T09:28:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The exponential value is57.6650390625]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- exp -->
+        <test-method status="PASS" signature="exp(double, double)[pri:0, instance:Scuba_testng.Calc_2@43814d18]" name="exp" duration-ms="5" started-at="2020-07-03T09:28:11 IST" data-provider="inputs_dbl" finished-at="2020-07-03T09:28:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The exponential value is498.11172172553194]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- exp -->
+        <test-method status="PASS" signature="exp(double, double)[pri:0, instance:Scuba_testng.Calc_2@43814d18]" name="exp" duration-ms="3" started-at="2020-07-03T09:28:11 IST" data-provider="inputs_dbl" finished-at="2020-07-03T09:28:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The exponential value is9.75393440940717E28]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- exp -->
+      </class> <!-- Scuba_testng.Calc_2 -->
+      <class name="Scuba_testng.Calculator">
+        <test-method status="PASS" signature="sub(int, int)[pri:0, instance:Scuba_testng.Calculator@5c5a1b69]" name="sub" duration-ms="1" started-at="2020-07-03T09:28:11 IST" data-provider="inputs" finished-at="2020-07-03T09:28:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The difference is-5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sub -->
+        <test-method status="PASS" signature="sub(int, int)[pri:0, instance:Scuba_testng.Calculator@5c5a1b69]" name="sub" duration-ms="2" started-at="2020-07-03T09:28:11 IST" data-provider="inputs" finished-at="2020-07-03T09:28:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The difference is-88]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sub -->
+        <test-method status="PASS" signature="sub(int, int)[pri:0, instance:Scuba_testng.Calculator@5c5a1b69]" name="sub" duration-ms="1" started-at="2020-07-03T09:28:11 IST" data-provider="inputs" finished-at="2020-07-03T09:28:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[35]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The difference is-15]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sub -->
+      </class> <!-- Scuba_testng.Calculator -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

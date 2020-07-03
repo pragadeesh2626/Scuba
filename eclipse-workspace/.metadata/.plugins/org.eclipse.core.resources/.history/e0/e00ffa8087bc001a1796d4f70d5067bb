@@ -1,0 +1,69 @@
+package Scuba_testng;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class Calc_2 {
+	@Test @DataProvider(name="inputs_dbl")
+	public static double divReal(int number1, int number2) {
+	      if (number2 == 0) {
+	         throw new IllegalArgumentException("Cannot divide by 0!");
+	      }
+	      return (double) number1 / number2;
+	   }
+	   
+	   
+	@Test @DataProvider(name="inputs_dbl")
+	   public static double exp(double number1, double number2) {
+	      if (number2 == 0) {
+	         throw new IllegalArgumentException("Cannot divide by 0!");
+	      }
+	      return Math.pow(number1, number2);
+	   }
+	   
+	   
+	@Test @DataProvider(name="inputs")
+	   public static int mod(int number1, int number2) {
+	      if (number2 == 0) {
+	         throw new IllegalArgumentException("Cannot divide by 0!");
+	      }
+	      return number1%number2;
+	   }
+	       
+	     
+	@Test 
+	   public static double inverse(int number1) {
+	      if (number1 == 0) {
+	         throw new IllegalArgumentException("Cannot divide by 0!");
+	      }
+	      return (double) 1 / number1;
+	   }
+	         
+	 @ Parameters({"number1"}) 
+	@Test 
+	   public static int negate(int number1) {
+	      if (number1 == 0) {
+	         throw new IllegalArgumentException("Cannot divide by 0!");
+	      }
+	      return (-1) * number1;
+	   }   
+	@DataProvider(name="inputs")
+	public Object[][] getData() {
+		return new Object[][] {
+			{1, 10},
+			{2, 6},
+			{3, 50}
+		};
+	}
+	@DataProvider(name="inputs_dbl")
+	public Object[][] getData1() {
+		return new Object[][] {
+			{1.5, 10.0},
+			{2.6, 6.5},
+			{3.8, 50.0}
+		};
+	}
+	   
+	}
+
